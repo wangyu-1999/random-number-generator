@@ -1,7 +1,7 @@
 services:
   app:
-    image: march787/random-number-generator:latest
-    container_name: random-number-generator
+    image: march787/random-number-generator-2:latest
+    container_name: random-number-generator-2
     ports:
       - "7860:7860"
     restart: always
@@ -11,5 +11,5 @@ services:
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30 random-number-generator
+    command: --interval 30 random-number-generator-2
     restart: always

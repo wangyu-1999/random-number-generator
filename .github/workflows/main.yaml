@@ -27,5 +27,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/node-express-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/random-number-generator-2:latest
           platforms: linux/amd64,linux/arm64
